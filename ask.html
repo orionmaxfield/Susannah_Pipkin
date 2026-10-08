@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask a Question | Latter-Day Sex Podcast</title>
+  <meta name="description" content="Send an anonymous question to Dr. Susannah Pipkin and Dr. Annie Bryner. Your question may be answered on a future episode of Latter-Day Sex.">
+  <!-- EDIT: set the real domain once it is live (also in sitemap.xml and robots.txt) -->
+  <link rel="canonical" href="https://latterdaysex.com/ask.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Latter-Day Sex Podcast">
+  <meta property="og:title" content="Ask a Question | Latter-Day Sex Podcast">
+  <meta property="og:description" content="Send an anonymous question to Dr. Susannah Pipkin and Dr. Annie Bryner. Your question may be answered on a future episode of Latter-Day Sex.">
+  <meta property="og:url" content="https://latterdaysex.com/ask.html">
+  <meta property="og:image" content="https://latterdaysex.com/assets/img/logo-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1C2B44">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/logo-192.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Latter-Day Sex home">
+        <img src="assets/img/logo-192.png" alt="" width="44" height="44">
+        <span class="brand-text">Latter-Day Sex<small>“Keep it Passionate”</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li><li><a href="episodes/index.html">Episodes</a></li><li><a href="topics/index.html">Topics</a></li><li><a href="about.html">Meet the Hosts</a></li><li><a href="ask.html" aria-current="page">Ask a Question</a></li><li><a class="btn" href="free-guide.html">Free Guide</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="page-hero">
+      <svg class="hero-art" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C2B44" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#1C2B44" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="fade2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C2B44" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1C2B44" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <!-- far hills -->
+  <path fill="url(#fade2)" d="M0 220 C 180 170, 300 190, 460 180 S 760 150, 900 175 S 1200 160, 1440 200 L1440 260 L0 260Z"/>
+  <!-- small chapel with steeple -->
+  <g fill="url(#fade)">
+    <path d="M1035 258 V170 h40 l0-8 h12 v-26 h6 v-14 h-3 v-6 h3 v-6 h3 v6 h3 v6 h-3 v14 h6 v26 h12 v8 h40 v88z"/>
+    <path d="M1127 230 l10-16 l10 16 v28 h-20z"/>
+  </g>
+  <!-- trees -->
+  <g fill="url(#fade)">
+    <path d="M180 258 v-30 c-14 0-24-12-24-28 c0-22 14-40 24-52 c10 12 24 30 24 52 c0 16-10 28-24 28z"/>
+    <path d="M230 258 v-24 c-10 0-18-10-18-22 c0-16 10-30 18-40 c8 10 18 24 18 40 c0 12-8 22-18 22z"/>
+    <path d="M1320 258 v-26 c-12 0-20-10-20-24 c0-18 12-34 20-44 c8 10 20 26 20 44 c0 14-8 24-20 24z"/>
+  </g>
+  <!-- near ground -->
+  <path fill="url(#fade)" d="M0 240 C 240 215, 480 235, 720 225 S 1200 215, 1440 235 L1440 260 L0 260Z"/>
+</svg>
+      <div class="wrap">
+        <span class="eyebrow">Ask us anything</span>
+        <h1>Send in your question</h1>
+        <p class="lede">Nothing is too awkward. Questions are anonymous unless you tell us otherwise, and your question might be exactly what another couple needs answered.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:2.5rem">
+      <div class="wrap">
+        <div class="grid grid-2" style="margin-top:0; align-items:start">
+          <div class="card">
+            <h2 style="font-size:1.6rem">Your question</h2>
+            <form data-form="questionAction" action="#" method="POST">
+              <div>
+                <label for="q-text">What would you like to ask?</label>
+                <textarea id="q-text" name="question" required placeholder="Share as much or as little context as you’d like."></textarea>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="q-name">First name (optional)</label>
+                  <input id="q-name" name="name" type="text" autocomplete="given-name" placeholder="Anonymous">
+                </div>
+                <div>
+                  <label for="q-email">Email (optional)</label>
+                  <input id="q-email" name="email" type="email" autocomplete="email" placeholder="If you’d like a reply">
+                </div>
+              </div>
+              <div>
+                <label for="q-topic">Topic</label>
+                <select id="q-topic" name="topic">
+                  <option value="">Choose one (optional)</option>
+                  <option value="desire-differences">Desire Differences</option><option value="shame-and-faith">Shame & Faith</option><option value="talking-about-sex">Talking About Sex</option><option value="pornography">Pornography</option><option value="dating-and-engagement">Dating & Engagement</option><option value="newlyweds-and-first-years">Newlyweds & First Years</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+              <label class="checkbox"><input type="checkbox" name="okay_to_read" value="yes" checked> It’s okay to read my question (anonymously) on the podcast.</label>
+              <input type="hidden" name="source" value="website-ask">
+              <p class="note form-unconfigured" hidden>The question form isn’t connected yet. Add your form endpoint in <code>assets/js/config.js</code>.</p>
+              <button class="btn" type="submit">Send my question</button>
+              <p class="note">Please don’t include anything you wouldn’t want read aloud, and never share another person’s private details. This form is not monitored for emergencies.</p>
+            </form>
+          </div>
+          <div class="prose">
+            <h2 style="font-size:1.6rem">A few things to know</h2>
+            <p><strong>We read everything.</strong> We can’t answer every question personally, but listener questions shape what we talk about on the show.</p>
+            <p><strong>Anonymous by default.</strong> If we read your question on air, we remove names and identifying details.</p>
+            <p><strong>This isn’t therapy.</strong> If you’re in a painful situation that isn’t getting better, please reach out to a licensed therapist in your area. If you’re in crisis, call or text 988 in the US.</p>
+            <h3>Prefer email?</h3>
+            <p>You can also <a data-email href="#">email us directly</a>. (Email address coming soon.)</p>
+            <h3>Media and speaking</h3>
+            <p>For interview requests, speaking, or collaboration, please use the form and mention it in your message.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="disclaimer">
+    <div class="wrap">
+      <p><strong>A note on what this is.</strong> Latter-Day Sex is an educational podcast. It is not therapy and is not a substitute for working with a licensed professional. If something here stirs up more than you expected, that’s a good sign it’s worth talking through with someone qualified.</p>
+      <p>This podcast is produced independently and is not an official publication of The Church of Jesus Christ of Latter-day Saints. The views expressed are those of the hosts.</p>
+      <p>If you are in crisis, call or text <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline in the US) or your local emergency number.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img src="assets/img/logo-192.png" alt="" width="52" height="52">
+            <span><strong>Latter-Day Sex</strong><small>“Keep it Passionate”</small></span>
+          </a>
+          <p>Faithful, frank conversations about sex and intimacy for members of The Church of Jesus Christ of Latter-day Saints, hosted by two certified sex therapists.</p>
+          <div class="social">
+            <a data-social="instagram" href="#" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+            <a data-social="facebook" href="#" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12z"/></svg></a>
+            <a data-social="tiktok" href="#" aria-label="TikTok" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 5.3a5 5 0 0 1-3-3.1V2h-3.5v13.8a2.9 2.9 0 1 1-2-2.8V9.5a6.4 6.4 0 1 0 5.5 6.3V8.6a8.5 8.5 0 0 0 5 1.6V6.7a5 5 0 0 1-2-1.4z"/></svg></a>
+            <a data-social="youtube" href="#" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul>
+            <li><a href="episodes/index.html">All episodes</a></li>
+            <li><a data-link="youtube" href="#">YouTube</a></li>
+            <li><a data-link="spotify" href="#">Spotify</a></li>
+            <li><a data-link="apple" href="#">Apple Podcasts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="topics/index.html">Topics</a></li>
+            <li><a href="about.html">Meet the hosts</a></li>
+            <li><a href="free-guide.html">Free guide</a></li>
+            <li><a href="ask.html">Ask a question</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a data-email href="ask.html">Email us</a></li>
+            <li><a href="free-guide.html#newsletter">Weekly newsletter</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Latter-Day Sex Podcast. All rights reserved.</span>
+        <span>Dr. Susannah Pipkin &amp; Dr. Annie Bryner</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

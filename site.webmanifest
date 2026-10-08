@@ -1,0 +1,13 @@
+{
+  "name": "Latter-Day Sex Podcast",
+  "short_name": "Latter-Day Sex",
+  "description": "Faithful, frank conversations about sex and intimacy for Latter-day Saint couples.",
+  "start_url": "./index.html",
+  "display": "browser",
+  "background_color": "#FFFDF9",
+  "theme_color": "#1C2B44",
+  "icons": [
+    { "src": "assets/img/logo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
