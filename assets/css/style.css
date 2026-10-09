@@ -128,6 +128,7 @@ section { padding: 4.5rem 0; }
 .btn-quiet:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
 .btn-light { background: #fff; color: var(--navy); border-color: #fff; box-shadow: none; }
 .btn-light:hover { background: var(--sky); border-color: var(--sky); }
+.section-navy .btn-light, .section-navy .btn-light:hover { color: var(--navy); }
 .btn svg { width: 1.1em; height: 1.1em; }
 
 /* --------------------------------------------------------------------------
