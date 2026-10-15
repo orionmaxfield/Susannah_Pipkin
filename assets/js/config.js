@@ -16,7 +16,7 @@ window.SITE = {
   tiktok: "",
 
   // Contact
-  email: "",            // e.g. "hello@latterdaysex.com"
+  email: "",            // e.g. "hello@latterdaysex.net"
 
   // Forms. Easiest free option: Formspree (https://formspree.io) — create a form,
   // paste its endpoint here. For the newsletter you can instead point at a
