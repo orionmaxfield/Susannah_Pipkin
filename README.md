@@ -36,7 +36,7 @@ Shared files live in `assets/`:
 2. **Forms** — create a free [Formspree](https://formspree.io) form (or a Kit / Mailchimp
    form) and paste the endpoint into `newsletterAction` and `questionAction` in
    `config.js`. Until then, submitting shows a “not connected yet” note.
-3. **Domain** — replace `https://latterdaysex.com` in every page’s `<link rel="canonical">`
+3. **Domain** — replace `https://latterdaysex.net` in every page’s `<link rel="canonical">`
    and `og:url`, plus `sitemap.xml` and `robots.txt`, with the real domain.
    A find-and-replace across the repo handles all of it.
 4. **Bios** — the credential lines on `about.html` (degrees, license type, years in
