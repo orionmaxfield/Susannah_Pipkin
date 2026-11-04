@@ -42,6 +42,28 @@
     if (action) {
       f.action = action;
       if (notice) notice.hidden = true;
+      // FormSubmit extras for the newsletter: subject line, tidy email, thank-you page, spam trap
+      if (key === "newsletterAction" && action.indexOf("formsubmit.co") !== -1) {
+        var extras = {
+          _subject: "New newsletter signup (latterdaysex.net)",
+          _template: "table",
+          _next: location.origin + "/subscribed.html",
+          _captcha: "false"
+        };
+        Object.keys(extras).forEach(function (name) {
+          if (!f.querySelector('[name="' + name + '"]')) {
+            var i = document.createElement("input");
+            i.type = "hidden"; i.name = name; i.value = extras[name];
+            f.appendChild(i);
+          }
+        });
+        if (!f.querySelector('[name="_honey"]')) {
+          var h = document.createElement("input");
+          h.type = "text"; h.name = "_honey"; h.tabIndex = -1; h.autocomplete = "off";
+          h.setAttribute("aria-hidden", "true"); h.style.cssText = "position:absolute;left:-9999px";
+          f.appendChild(h);
+        }
+      }
     } else {
       f.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -53,7 +75,7 @@
   // Hide social icons that aren't configured
   document.querySelectorAll("[data-social]").forEach(function (a) {
     var url = cfg[a.getAttribute("data-social")];
-    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; } else { a.hidden = true; }
+    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; a.hidden = false; } else { a.hidden = true; }
   });
 
   // Footer year
