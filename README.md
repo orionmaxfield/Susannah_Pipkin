@@ -45,12 +45,14 @@ Shared files live in `assets/`:
 5. **Photos** — swap `assets/img/*.jpg` for the professional photos when they arrive.
    Keep the same filenames and nothing else needs to change.
 6. **Privacy policy** — review `privacy.html` against the services actually in use.
-7. **Episode 1** — when it publishes, open its page and replace the placeholder block
+7. ~~**Episode 1**~~ — done Nov 2, 2026 (video embedded, thumbnail at `assets/img/ep01-where-did-the-desire-go.jpg`). For later episodes: when one publishes, open its page and replace the placeholder block
    with the YouTube embed (an HTML comment shows exactly what to paste), then put the
    episode-specific platform URLs on its listen buttons. Update the date in the
    episode card on `index.html` and `episodes/index.html`.
 
 ## Adding an episode
+
+Thumbnails from Melissa (16:9, 1280×720) go in `assets/img/epNN-slug.jpg`; use the `episode-art has-thumb` card markup from Episode 1.
 
 1. Copy `_templates/episode.html` to `episodes/NN-short-slug.html`.
 2. Replace every CAPITALIZED placeholder (title, date, synopsis, takeaways, quotes,
