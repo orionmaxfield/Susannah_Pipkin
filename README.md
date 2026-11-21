@@ -18,7 +18,7 @@ static host.
 | `free-guide.html` | Lead magnet + newsletter signup (marketing funnel) |
 | `ask.html` | Anonymous question form |
 | `privacy.html`, `404.html` | Utility pages |
-| `sitemap.xml`, `robots.txt`, `site.webmanifest` | SEO / PWA basics |
+| `sitemap.xml`, `robots.txt`, `llms.txt`, `site.webmanifest` | SEO / AI-search / PWA basics |
 | `_templates/episode.html` | Copy-and-fill template for new episodes (folders starting with `_` are not published by GitHub Pages) |
 
 Shared files live in `assets/`:
@@ -61,7 +61,7 @@ Thumbnails from Melissa (16:9, 1280×720) go in `assets/img/epNN-slug.jpg`; use 
    and update the “Latest episode” card on `index.html`.
 4. Add the episode card to each relevant `topics/*.html` page under “Episodes on …”
    (replace the “coming soon” callout the first time).
-5. Add the new URL to `sitemap.xml`.
+5. Add the new URL to `sitemap.xml`. Add one line for the episode to `llms.txt` (the plain-text summary AI search tools read).
 6. Spotify buttons: show-level buttons carry the show URL in the HTML (and in `config.js`). Once the episode is on Spotify, put its episode URL on that episode's listen buttons (drop `data-link="spotify"` there, as on Episode 1). Apple stays `href="#"` (shows “soon”) until `apple` is set in `config.js`.
 
 ## Adding a topic page
