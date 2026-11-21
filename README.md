@@ -11,7 +11,7 @@ static host.
 | --- | --- |
 | `index.html` | Home: hero, why-us, latest episode, topics, hosts, newsletter, FAQ |
 | `episodes/index.html` | Episode list |
-| `episodes/01-….html` | Episode 1 page (synopsis, takeaways, quotes, listen links) |
+| `episodes/NN-….html` | One page per episode (synopsis, takeaways, quotes, listen links). Episodes 1 and 2 are live. |
 | `topics/index.html` | Topic hub (SEO landing pages) |
 | `topics/*.html` | One page per topic: desire differences, shame & faith, talking about sex, pornography, dating & engagement, newlyweds |
 | `about.html` | Host bios |
@@ -62,6 +62,7 @@ Thumbnails from Melissa (16:9, 1280×720) go in `assets/img/epNN-slug.jpg`; use 
 4. Add the episode card to each relevant `topics/*.html` page under “Episodes on …”
    (replace the “coming soon” callout the first time).
 5. Add the new URL to `sitemap.xml`.
+6. Spotify buttons: show-level buttons carry the show URL in the HTML (and in `config.js`). Once the episode is on Spotify, put its episode URL on that episode's listen buttons (drop `data-link="spotify"` there, as on Episode 1). Apple stays `href="#"` (shows “soon”) until `apple` is set in `config.js`.
 
 ## Adding a topic page
 
